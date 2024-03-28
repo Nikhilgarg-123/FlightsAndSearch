@@ -14,3 +14,7 @@
     -static/
     -temp/
     
+
+    to start you need to configure .env file 
+
+    port: 3000 // example
