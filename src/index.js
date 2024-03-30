@@ -15,7 +15,8 @@ const setupAndStartServer = async () => {
   app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
     try {
-      cityRepository.createCity({ cityname: 'Delhs' });
+     
+      cityRepository.getCity(5);
     } catch (error) {
       console.error(error);
     }
