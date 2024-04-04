@@ -9,7 +9,6 @@ const setupAndStartServer = async () => {
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({ extended: true }));
 
-  const cityRepository = new CityRepository();
 
   app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);

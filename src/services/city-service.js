@@ -8,7 +8,7 @@ class CityService{
     async createCity(data){
       
         try{
-            const city = await this.CityRepository.createCity(data);
+            const city = await this.CityRepository.createCity({data});
             return city;
 
         } catch(error){
