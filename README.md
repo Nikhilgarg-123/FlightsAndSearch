@@ -26,10 +26,11 @@ Inside the src/config/config.json folder edit the following  piece of json
     "development": {
         "username": "root",   // username of your sql
         "password": "root",   // password of your sql
-        "database": "Flights_search_db_development",       // naem of the database
+        "database": "Flights_search_db_development",       // name of the database
         "host": "127.0.0.1",
         "dialect": "mysql"
-    },
+    }
+
 
 
 Workflow configuration
@@ -45,3 +46,7 @@ Models => repository => Service => controllers => routes
 
 
 
+## Tables
+### City => id ,name,created_at,updated_at
+### Airport => id ,name,address,city_id,created_at,updated_at
+    Relationship: City has many airports and airport belongs to a city (one to many) 
